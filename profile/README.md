@@ -6,7 +6,7 @@ Done-for-you revenue and pricing management for short-term rental operators. We 
 
 ---
 
-75+ clients · 3,000+ listings under management · $185M+ annual managed revenue · +18% average market outperformance
+80+ clients · 3,900+ listings under management · $215M+ annual managed revenue · +18% average market outperformance
 
 ---
 
