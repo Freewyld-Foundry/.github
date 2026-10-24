@@ -1,0 +1,25 @@
+name: Build
+on:
+  pull_request:
+  push:
+    branches: [$default-branch]
+permissions:
+  contents: read
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+# Use the existing hosting build instead when it already checks this commit.
+# Add only affected financial/access/data checks. Deploy the checked artifact
+# through the existing route, then verify its revision and affected behavior.

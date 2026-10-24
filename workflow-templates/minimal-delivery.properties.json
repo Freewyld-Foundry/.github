@@ -1,0 +1,10 @@
+{
+  "name": "Minimal Freewyld delivery",
+  "description": "One build, affected risk checks only, existing deployment, one affected live check.",
+  "categories": [
+    "JavaScript"
+  ],
+  "filePatterns": [
+    "package.json$"
+  ]
+}
